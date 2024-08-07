@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -7,7 +8,6 @@ export function Project() {
     <Container id="project">
       <h2>My Projects</h2>
       <div className="projects">
-
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>

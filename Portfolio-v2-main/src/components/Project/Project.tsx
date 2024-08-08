@@ -86,6 +86,77 @@ export function Project() {
           </div>
         </ScrollAnimation>
 
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Folder</title> 
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> 
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/ShaiBatonya/restaurant_server" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Restaurant Management System</h3>
+              <p> 
+                Restaurant Management System is a server-side web application developed to manage various aspects of a restaurant.
+                <ul>
+                  <li>Manage clients, dishes, employees, and events efficiently.</li>
+                  <li>Model relationships, where each event integrates the rest of the modules.</li>
+                  <li>Server side developed using Express Generator and Node.js for robust functionality.</li>
+                  <li>Data Base Used: MongoDB.</li>
+                </ul>
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Folder</title> 
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> 
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/ShaiBatonya/Products-Website" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Product Store Website</h3>
+              <p> 
+                Product Store Website is a full-stack web application developed to manage and display products.
+                <ul>
+                  <li>Client side developed using React, providing a seamless and interactive user experience.</li>
+                  <li>Server side developed using Node.js and Express for robust backend functionality.</li>
+                  <li>Data Base Used: MongoDB.</li>
+                  <li>Includes an intuitive admin panel for easy management and data insights.</li>
+                </ul>
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>JavaScript</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
       </div>
     </Container>
   );

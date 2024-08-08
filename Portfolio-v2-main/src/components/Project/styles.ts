@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding: 5rem 10rem;
 
   h2 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     color: var(--text-color);
     margin-bottom: 3rem;
     text-align: center;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
   }
 
@@ -54,12 +54,12 @@ export const Container = styled.div`
       margin-top: 2rem;
 
       h3 {
-        font-size: 2.4rem;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
         margin-bottom: 1rem;
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 2.5vw, 1.8rem);
         color: var(--text-color);
       }
 
@@ -68,7 +68,7 @@ export const Container = styled.div`
         padding-left: 1.5rem;
 
         li {
-          font-size: 1.6rem;
+          font-size: clamp(1.2rem, 2vw, 1.6rem);
           margin-bottom: 0.5rem;
         }
       }
@@ -87,9 +87,15 @@ export const Container = styled.div`
           color: #fff;
           padding: 0.5rem 1rem;
           border-radius: 1rem;
-          font-size: 1.4rem;
+          font-size: clamp(1rem, 2vw, 1.4rem);
         }
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr 1fr;
     }
   }
 `;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from "./styles";
 import profileImage from "../../assets/shai3.jpg";
 import reactIcon from "../../assets/react.png";

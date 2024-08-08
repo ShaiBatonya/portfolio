@@ -65,6 +65,36 @@ export const Container = styled.div`
     }
   }
 
+  .carousel-container {
+    margin-top: 3rem;
+    text-align: center;
+
+    h3 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .carousel {
+      max-width: 80%;
+      margin: 0 auto;
+
+      .slide img {
+        border-radius: 1rem;
+        max-height: 300px;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      .legend {
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 0.3rem 0.6rem; /* הצרת הפס השחור */
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     .education-list {
       grid-template-columns: 1fr 1fr;
@@ -77,6 +107,22 @@ export const Container = styled.div`
       p {
         text-align: left;
       }
+    }
+
+    .carousel-container .carousel {
+      max-width: 60%;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .carousel-container .carousel {
+      max-width: 75%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-container .carousel {
+      max-width: 90%;
     }
   }
 `;

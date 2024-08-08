@@ -1,6 +1,12 @@
 import React from 'react';
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import certificate_yaniv_arad from '../../assets/certificate_yaniv_arad.png';
+import iccp_certificate from '../../assets/iccp_certificate.png';
+import react_udemy from '../../assets/react_udemy.jpg';
+import ts_udemy from '../../assets/ts_udemy.jpg';
 
 export const Education: React.FC = () => {
   return (
@@ -31,6 +37,27 @@ export const Education: React.FC = () => {
             </p>
           </div>
         </ScrollAnimation>
+      </div>
+      <div className="carousel-container">
+        <h3>Certificates</h3>
+        <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay interval={3000} transitionTime={1000} emulateTouch>
+          <div>
+            <img src={certificate_yaniv_arad} alt="Yaniv Arad - Tech Training Labs" />
+            <p className="legend">Yaniv Arad - Tech Training Labs</p>
+          </div>
+          <div>
+            <img src={iccp_certificate} alt="TESI - היחידה ללימודי חוץ - ICCP" />
+            <p className="legend">TESI - היחידה ללימודי חוץ - ICCP</p>
+          </div>
+          <div>
+            <img src={react_udemy} alt="React Udemy Course" />
+            <p className="legend">React Udemy Course</p>
+          </div>
+          <div>
+            <img src={ts_udemy} alt="TypeScript Udemy Course" />
+            <p className="legend">TypeScript Udemy Course</p>
+          </div>
+        </Carousel>
       </div>
     </Container>
   );

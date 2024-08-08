@@ -2,6 +2,23 @@ import React from 'react';
 import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+// Importing project images
+import project1 from '../../assets/project1.png';
+import project2 from '../../assets/project2.png';
+import project3 from '../../assets/project3.png';
+import project4 from '../../assets/project4.png';
+import project5 from '../../assets/project5.png';
+
+const projectImages = [
+  project1,
+  project2,
+  project3,
+  project4,
+  project5
+];
 
 const projects = [
   {
@@ -60,6 +77,15 @@ export function Project() {
   return (
     <Container id="project">
       <h2>My Projects</h2>
+      <div className="carousel-container">
+        <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay interval={3000} transitionTime={1000} emulateTouch>
+          {projectImages.map((image, idx) => (
+            <div key={idx}>
+              <img src={image} alt={`Project screenshot ${idx + 1}`} />
+            </div>
+          ))}
+        </Carousel>
+      </div>
       <div className="projects">
         {projects.map((project, index) => (
           <ScrollAnimation key={index} animateIn="flipInX">

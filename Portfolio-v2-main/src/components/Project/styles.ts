@@ -10,6 +10,19 @@ export const Container = styled.div`
     text-align: center;
   }
 
+  .carousel-container {
+    margin-bottom: 3rem;
+
+    .carousel .slide img {
+      border-radius: 1rem;
+      max-height: 400px;
+      object-fit: contain;
+      width: auto;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

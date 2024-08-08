@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 5rem 10rem;
+  padding: 5rem 2rem;
 
   h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -62,7 +62,8 @@ export const Container = styled.div`
       font-size: clamp(1.4rem, 2.5vw, 1.8rem);
       color: var(--text-color);
       line-height: 1.6;
-      text-align: center; /* מרכז את הטקסט במסכים קטנים */
+      text-align: center;
+      margin-bottom: 1rem;
     }
   }
 
@@ -97,12 +98,14 @@ export const Container = styled.div`
   }
 
   @media (min-width: 768px) {
+    padding: 5rem 10rem;
+
     .education-list {
       grid-template-columns: 1fr 1fr;
     }
 
     .education-item {
-      flex-direction: column;
+      align-items: flex-start;
       text-align: left;
 
       p {
@@ -115,12 +118,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 480px) {
-    .carousel-container .carousel {
-      max-width: 75%;
-    }
-  }
-
   @media (max-width: 480px) {
     .carousel-container .carousel {
       max-width: 90%;
@@ -128,7 +125,7 @@ export const Container = styled.div`
 
     .education-item {
       p {
-        text-align: center; /* מרכז את הטקסט במסכים קטנים */
+        text-align: center;
       }
     }
   }

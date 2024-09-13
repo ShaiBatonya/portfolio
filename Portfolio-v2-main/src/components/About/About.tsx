@@ -29,11 +29,6 @@ export function About() {
             Hi there! I'm <strong>Shai Gabriel Batonya</strong>, an experienced Full Stack developer specializing in React, Node.js, MongoDB, AWS, Docker & Kubernetes, and CI/CD procedures. I have a proven track record in developing educational applications that improve learning processes through gamification.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
-          <p>
-            I’m ready for my next challenge in a company looking for an innovative and committed team player to deliver high-quality code.
-          </p>
-        </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h3>Here are my main skills:</h3>
           <div className="skills">

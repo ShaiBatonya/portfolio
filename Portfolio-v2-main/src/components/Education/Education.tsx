@@ -7,6 +7,7 @@ import certificate_yaniv_arad from '../../assets/certificate_yaniv_arad.png';
 import iccp_certificate from '../../assets/iccp_certificate.png';
 import react_udemy from '../../assets/react_udemy.jpg';
 import ts_udemy from '../../assets/ts_udemy.jpg';
+import nodeJS_udemy from '../../assets/nodeJS_udemy.jpg';
 
 export const Education: React.FC = () => {
   return (
@@ -52,6 +53,10 @@ export const Education: React.FC = () => {
           <div>
             <img src={react_udemy} alt="React Udemy Course" />
             <p className="legend">React Udemy Course</p>
+          </div>
+          <div>
+            <img src={nodeJS_udemy} alt="nodeJS Course" />
+            <p className="legend">nodeJS Udemy Course</p>
           </div>
           <div>
             <img src={ts_udemy} alt="TypeScript Udemy Course" />

@@ -55,7 +55,7 @@ export const Education: React.FC = () => {
             <p className="legend">React Udemy Course</p>
           </div>
           <div>
-            <img src={nodeJS_udemy} alt="nodeJS Course" />
+            <img src={nodeJS_udemy} alt="nodeJS Udemy Course" />
             <p className="legend">nodeJS Udemy Course</p>
           </div>
           <div>

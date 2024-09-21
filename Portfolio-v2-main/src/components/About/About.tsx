@@ -30,7 +30,7 @@ export function About() {
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Here are my main skills:</h3>
+          <h3>Here are my main skills :</h3>
           <div className="skills">
             <img src={reactIcon} alt="React" className="skill-icon"/>
             <img src={nodeIcon} alt="Node.js" className="skill-icon"/>

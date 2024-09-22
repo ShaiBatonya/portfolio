@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <Container className="footer">
       <a href="https://github.com/ShaiBatonya" className="logo">
-        <span>Shai Gabriel Batonya</span>
+        <span>Shai  Gabriel  Batonya</span>
       </a>
       <div>
         <p>

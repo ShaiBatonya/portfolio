@@ -18,7 +18,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Responsibility ⚖  Productivity 💼  Ambition 🚀<br />
+            Responsibility ⚖   Productivity 💼   Ambition 🚀<br />
             These are not just principles. <br />
             These are personal commitments that shape every action and decision I make.  ✨<br />
             I firmly believe that one can succeed and create a positive impact with these values.

@@ -1,9 +1,9 @@
 import { Container } from './styles';
-import reactIcon from '../../assets/react.png'; // פורמט PNG
-import linkedin from '../../assets/linkedin.png'; // פורמט PNG
-import githubIcon from '../../assets/github.png'; // פורמט PNG
-import whatsapp from '../../assets/whatsapp.png'; // פורמט PNG
-import telegram from '../../assets/telegram.png'; // פורמט PNG
+import reactIcon from '../../assets/react.png'; 
+import linkedin from '../../assets/linkedin.png'; 
+import githubIcon from '../../assets/github.png'; 
+import whatsapp from '../../assets/whatsapp.png'; 
+import telegram from '../../assets/telegram.png'; 
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
       </a>
       <div>
         <p>
-          This Website was made with <img src={reactIcon} alt="React" />
+          This Website was made with - <img src={reactIcon} alt="React" />
         </p>
       </div>
       <div className="social-media">

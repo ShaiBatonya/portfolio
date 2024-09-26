@@ -22,8 +22,8 @@ const projectImages = [
 
 const projects = [
   {
-    title: "MERN Stack Real Estate Listing Website",
-    description: "MERN-stack Real Estate Listing Website is a comprehensive web application developed in JavaScript.",
+    title: "EstateExplorer M.E.R.N Stack Listing Website",
+    description: "EstateExplorer Listing Website is a comprehensive web application developed in JavaScript.",
     details: [
       "Comprehensive web application with both server-side and client-side components",
       "Client side developed in: React, Chakra UI, JS, and HTML/CSS for an interactive and visually appealing user experience.",

@@ -22,7 +22,7 @@ const projectImages = [
 
 const projects = [
   {
-    title: "EstateExplorer M.E.R.N Stack Listing Website",
+    title: "EstateExplorer  M.E.R.N Stack Listing Website",
     description: "EstateExplorer Listing Website is a comprehensive web application developed in JavaScript.",
     details: [
       "Comprehensive web application with both server-side and client-side components",
@@ -60,7 +60,7 @@ const projects = [
     link: "https://github.com/ShaiBatonya/restaurant_server"
   },
   {
-    title: "Product Store Website",
+    title: " Product  Store  Website",
     description: "Product Store Website is a full-stack web application developed to manage and display products.",
     details: [
       "Client side developed using React, providing a seamless and interactive user experience.",

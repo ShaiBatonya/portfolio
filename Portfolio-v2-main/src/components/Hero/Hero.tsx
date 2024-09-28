@@ -20,7 +20,7 @@ export function Hero() {
           <h1>Shai Gabriel Batonya</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer</h3>
+          <h3> Full Stack Developer </h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume"> Full Stack developer that specializes in React, Express, MongoDB, Node.js, AWS, TypeScript, Next.js, Dockers & Kubernetes, CI/CD with the ability to develop educational applications that improve learning processes through gamification.</p>

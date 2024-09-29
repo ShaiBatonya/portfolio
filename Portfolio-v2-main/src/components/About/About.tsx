@@ -26,7 +26,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <p>
-            Hi there! I'm <strong> Shai Gabriel Batonya </strong>, an experienced Full Stack developer specializing in React, Node.js, MongoDB, AWS, Docker & Kubernetes, and CI/CD procedures. I have a proven track record in developing educational applications that improve learning processes through gamification.
+            Hi there! I'm <strong> Shai  Gabriel  Batonya </strong>, an experienced Full Stack developer specializing in React, Node.js, MongoDB, AWS, Docker & Kubernetes, and CI/CD procedures. I have a proven track record in developing educational applications that improve learning processes through gamification.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>

@@ -37,7 +37,7 @@ const projects = [
     link: "https://github.com/ShaiBatonya/Real-Estate-MERN-STACK"
   },
   {
-    title: "Events Application",
+    title: "Events  Application",
     description: "Events Application is a web application developed in JavaScript.",
     details: [
       "Client-side developed using React, Chakra UI, HTML, and CSS, providing an intuitive user interface.",
@@ -48,7 +48,7 @@ const projects = [
     link: "https://github.com/ShaiBatonya/patents_server-client"
   },
   {
-    title: "Restaurant Management System",
+    title: "Restaurant  Management  System",
     description: "Restaurant Management System is a server-side web application developed to manage various aspects of a restaurant.",
     details: [
       "Manage clients, dishes, employees, and events efficiently.",

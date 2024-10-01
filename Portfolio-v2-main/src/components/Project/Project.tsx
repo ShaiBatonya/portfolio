@@ -63,10 +63,10 @@ const projects = [
     title: " Product  Store  Website",
     description: "Product Store Website is a full-stack web application developed to manage and display products.",
     details: [
-      "Client side developed using React, providing a seamless and interactive user experience.",
+      "Client side developed using React, providing seamless and interactive user experience.",
       "Server side developed using Node.js and Express for robust backend functionality.",
       "Data Base Used: MongoDB.",
-      "Includes an intuitive admin panel for easy management and data insights."
+      "Includes an intuitive admin panel for easy management and data insights. "
     ],
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript"],
     link: "https://github.com/ShaiBatonya/Products-Website"

@@ -33,7 +33,7 @@ const projects = [
     ],
     tech: ["React", "Chakra UI", "JavaScript", "Node.js", "Express", "MongoDB"],
     link: "https://github.com/ShaiBatonya/Real-Estate-MERN-STACK",
-    liveDemo: "https://real-estate-mern-stack.vercel.app/"
+
   },
   {
     title: "Events  Application",
@@ -98,11 +98,7 @@ export function Project() {
                   <a href={project.link} target="_blank" rel="noreferrer">
                     <img src={githubIcon} alt="GitHub Repository" />
                   </a>
-                  {project.liveDemo && (
-                    <a href={project.liveDemo} target="_blank" rel="noreferrer" className="live-demo-button">
-                      Live Demo
-                    </a>
-                  )}
+
                 </div>
               </header>
               <div className="body">

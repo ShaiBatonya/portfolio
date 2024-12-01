@@ -17,17 +17,19 @@ const projectImages = [project5, project4, project2, project1, project3];
 const projects = [
   {
     title: "Shopfinity - E-commerce Platform",
-    description: "An advanced e-commerce platform built with modern web technologies.",
+    description: "A cutting-edge e-commerce platform delivering a seamless shopping experience with modern web technologies.",
     details: [
-      "Client-side developed with React and Styled Components for an interactive user experience.",
-      "Server-side built using Node.js and Express, featuring secure JWT authentication.",
-      "Real-time cart management and seamless payment integration.",
-      "Responsive and fully optimized for mobile and desktop devices.",
+        "Client-side developed with React and Styled Components for a visually appealing and interactive user interface.",
+        "State management powered by Redux for real-time cart updates and efficient state synchronization.",
+        "Advanced product filtering, cart management, and wishlist functionality.",
+        "Built with Tailwind CSS for modern and responsive design across all devices.",
+        "Optimized for fast performance and a consistent user experience on mobile and desktop.",
     ],
-    tech: ["React", "Node.js", "Express", "MongoDB", "Styled Components"],
+    tech: ["React", "Redux", "Tailwind CSS", "Styled Components"],
     link: "https://github.com/ShaiBatonya/Shopfinity",
     demo: "https://shopfinity-nine.vercel.app/",
-  },
+},
+
   {
     title: "EstateExplorer - Real Estate Platform",
     description:

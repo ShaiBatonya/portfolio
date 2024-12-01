@@ -10,6 +10,24 @@ export const Container = styled.div`
     text-align: center;
   }
 
+.project-links .live-demo-button {
+  background-color: #23ce6b;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links .live-demo-button:hover {
+  background-color: #1ea856;
+  transform: translateY(-3px);
+}
+
+
   .carousel-container {
     margin-bottom: 3rem;
 

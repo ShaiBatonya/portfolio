@@ -45,6 +45,20 @@ const projects = [
     demo: "https://real-estate-mern-stack.vercel.app/",
   },
   {
+    title: "GradientStudio - Gradient Exploration Platform",
+    description: "A React-based gradient exploration platform for previewing, copying, and integrating stunning gradient styles into projects.",
+    details: [
+      "Developed using React and TailwindCSS for a sleek and responsive UI.",
+      "Features real-time gradient previews for text and background styles.",
+      "Enables users to copy TailwindCSS gradient classes for seamless integration.",
+      "Built with Vite for fast performance and modern web development experience.",
+      "Optimized for responsive design across desktop and mobile devices."
+    ],
+    tech: ["React", "Vite", "TailwindCSS", "Responsive Design", "UI/UX"],
+    link: "https://github.com/ShaiBatonya/GradientStudio",
+    demo: "https://gradient-studio.vercel.app/",
+  },
+  {
     title: "Events Application",
     description:
       "A web application developed to manage events with an intuitive user interface.",

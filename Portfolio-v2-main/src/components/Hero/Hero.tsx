@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "./styles";
 import profileImage from "../../assets/profileImage.png";
 import Hello from '../../assets/Hello.gif';
@@ -8,6 +9,8 @@ import telegram from '../../assets/telegram.png';
 import ScrollAnimation from "react-animate-on-scroll";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as NavHashLink } from "react-router-hash-link";
+import Button from "../Button";
+import SmartImage from "../UI/SmartImage";
 
 export function Hero() {
   return (
@@ -23,11 +26,17 @@ export function Hero() {
           <h3> Full Stack Developer </h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume"> Full Stack developer that specializes in React, Express, MongoDB, Node.js, AWS, TypeScript, Next.js, Dockers & Kubernetes, CI/CD with the ability to develop educational applications that improve learning processes through gamification.</p>
+          <div className="content">
+            <p className="small-resume"> Full Stack developer that specializes in React, Express, MongoDB, Node.js, AWS, TypeScript, Next.js, Dockers & Kubernetes, CI/CD with the ability to develop educational applications that improve learning processes through gamification.</p>
+          </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact Me</NavHashLink>
+            <NavHashLink smooth to="#contact" style={{ textDecoration: 'none' }}>
+              <Button variant="primary" size="lg">
+                Contact Me
+              </Button>
+            </NavHashLink>
           </BrowserRouter>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
@@ -49,7 +58,14 @@ export function Hero() {
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={profileImage} alt="Shai Gabriel Batonya" />
+          <SmartImage 
+            src={profileImage} 
+            alt="Shai Batonya portrait" 
+            priority
+            fetchPriority="high"
+            sizes="(max-width: 768px) 40vw, 320px"
+            aspect="1/1"
+          />
         </ScrollAnimation>
       </div>
     </Container>

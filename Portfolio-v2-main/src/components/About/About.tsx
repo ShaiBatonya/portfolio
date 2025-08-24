@@ -16,19 +16,21 @@ export function About() {
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About Me</h2>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
-          <p>
-            Responsibility ⚖   Productivity 💼   Ambition 🚀<br />
-            These are not just principles. <br />
-            These are personal commitments that shape every action and decision I make.  ✨<br />
-            I firmly believe that one can succeed and create a positive impact with these values.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <p>
-            Hi there! I'm <strong> Shai  Gabriel  Batonya </strong>, an experienced Full Stack developer specializing in React, Node.js, MongoDB, AWS, Docker & Kubernetes, and CI/CD procedures. I have a proven track record in developing educational applications that improve learning processes through gamification.
-          </p>
-        </ScrollAnimation>
+        <div className="content">
+          <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
+            <p>
+              Responsibility ⚖   Productivity 💼   Ambition 🚀<br />
+              These are not just principles. <br />
+              These are personal commitments that shape every action and decision I make.  ✨<br />
+              I firmly believe that one can succeed and create a positive impact with these values.
+            </p>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
+            <p>
+              Hi there! I'm <strong> Shai  Gabriel  Batonya </strong>, an experienced Full Stack developer specializing in React, Node.js, MongoDB, AWS, Docker & Kubernetes, and CI/CD procedures. I have a proven track record in developing educational applications that improve learning processes through gamification.
+            </p>
+          </ScrollAnimation>
+        </div>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h3>Here are my main skills :</h3>
           <div className="skills">

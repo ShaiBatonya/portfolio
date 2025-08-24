@@ -5,9 +5,9 @@ import Button from "../Button";
 export default function AccessibilityButton(){
   const [open, setOpen] = React.useState(false);
   return (
-    <div style={{position:"fixed", right:"16px", bottom:"16px", zIndex:60}}>
+    <div className="a11y-fab">
       <Button variant="soft" size="lg" onClick={()=>setOpen(true)} aria-label="Open accessibility panel">
-        ♿️
+        <span className="fab-emoji" aria-hidden="true">♿️</span>
       </Button>
       {open && <Panel onClose={()=>setOpen(false)} />}
     </div>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Container = styled.main`
+export const Container = styled.main<{id?: string}>`
   position: relative;
   z-index: 0;
   padding: 0 10rem;

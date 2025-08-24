@@ -58,14 +58,18 @@ export function Hero() {
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <SmartImage 
-            src={profileImage} 
-            alt="Shai Batonya portrait" 
-            priority
-            fetchPriority="high"
-            sizes="(max-width: 768px) 40vw, 320px"
-            aspect="1/1"
-          />
+          <div className="hero-card">
+            <div className="hero-photo">
+              <SmartImage 
+                src={profileImage} 
+                alt="Shai Batonya portrait" 
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 640px) 40vw, (max-width: 1024px) 28vw, 320px"
+                aspect="1/1"
+              />
+            </div>
+          </div>
         </ScrollAnimation>
       </div>
     </Container>

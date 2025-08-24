@@ -57,8 +57,14 @@ export function A11yProvider({children}:{children:React.ReactNode}){
     set("data-a11y-ul", state.underlineLinks?1:"");
     set("data-a11y-focus", state.focusOutline?1:"");
     set("data-a11y-pausebg", state.pauseBackground?1:"");
-    set("data-a11y-scale", state.scale>1?state.scale:"");
     set("data-a11y-dys", state.dyslexic?1:"");
+    
+    // Text scaling via CSS variable (attr() not widely supported)
+    if (state.scale && state.scale !== 1) {
+      el.style.setProperty("--a11y-scale", String(state.scale));
+    } else {
+      el.style.removeProperty("--a11y-scale");
+    }
     
     try{ 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); 

@@ -13,9 +13,13 @@ import awsIcon from "../../assets/aws.png";
 import dockerIcon from "../../assets/docker.png";
 import kubernetesIcon from "../../assets/kubernetes.png";
 
-export const Main: React.FC = () => {
+interface MainProps {
+  id?: string;
+}
+
+export const Main: React.FC<MainProps> = ({id}) => {
   return (
-    <Container>
+    <Container id={id}>
       <Particles
         id="tsparticles"
         options={{

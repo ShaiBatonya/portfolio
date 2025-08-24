@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
   :root{
     --pink: #E31F71;
     --black: #212121;
@@ -51,6 +53,15 @@ export const GlobalStyle = createGlobalStyle`
     --elev-1: 0 1px 2px rgba(0,0,0,.25);
     --elev-2: 0 10px 30px rgba(0,0,0,.28);
     --edge: color-mix(in oklab, #ffffff 8%, transparent);
+
+    /* FAB sizing tokens */
+    --fab-size: clamp(56px, 6vw, 72px);
+    --fab-icon: clamp(22px, 2.6vw, 30px);
+
+    /* Hero portrait sizing */
+    --hero-photo-min: 160px;
+    --hero-photo-vw: 22vw;
+    --hero-photo-max: 340px;
     --gutter: clamp(16px, 4vw, 32px);
     --measure: 72ch;
     --radius: 16px;
@@ -120,6 +131,196 @@ export const GlobalStyle = createGlobalStyle`
     --mesh-1: #141821;
     --mesh-2: #0f131a;
     --mesh-accent: rgba(122,162,255,.06);
+  }
+
+  /* ——— Accessibility Panel ——— */
+  .a11y-card {
+    width: min(560px, 92vw); 
+    border-radius: 16px; 
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+    padding: 16px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  .a11y-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px; 
+    margin: 12px 0; 
+  }
+  
+  .a11y-toggle { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    min-height: 44px; 
+    cursor: pointer;
+  }
+  
+  .a11y-toggle input { 
+    width: 18px; 
+    height: 18px; 
+    cursor: pointer;
+  }
+  
+  .a11y-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .a11y-actions { 
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-top: 8px; 
+  }
+  
+  .a11y-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  .a11y-scale { 
+    min-width: 54px; 
+    text-align: center; 
+    font-weight: 500;
+  }
+
+  /* ——— Accessibility Tokens ——— */
+  /* Text scaling driven by CSS var from provider */
+  html {
+    font-size: calc(16px * var(--a11y-scale, 1));
+  }
+
+  /* High contrast */
+  html[data-a11y-hc="1"] {
+    --surface: #0a0b0f; 
+    --surface-2: #0c0f15; 
+    --fg: #ffffff; 
+    --muted: #d5dbe2; 
+    --border: #3a4250; 
+    --primary: #8ab4ff;
+  }
+
+  /* Reduce motion */
+  html[data-a11y-rm="1"] * {
+    animation: none !important; 
+    transition: none !important; 
+    scroll-behavior: auto !important;
+  }
+
+  /* Underline links */
+  html[data-a11y-ul="1"] a { 
+    text-decoration: underline; 
+    text-underline-offset: 2px; 
+  }
+
+  /* Strong focus */
+  html[data-a11y-focus="1"] :focus-visible {
+    outline: 3px solid var(--primary); 
+    outline-offset: 3px; 
+    border-radius: 10px;
+  }
+
+  /* Pause animated background */
+  html[data-a11y-pausebg="1"] body::before { 
+    animation: none !important; 
+    opacity: .75; 
+  }
+
+  /* Dyslexia-friendly font (load once globally) */
+  html[data-a11y-dys="1"] {
+    font-family: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  /* Skip link for keyboard navigation */
+  .skip-link {
+    position: absolute; 
+    left: -9999px; 
+    top: auto; 
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden;
+    background: var(--primary);
+    color: #0b0c0f;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+  .skip-link:focus { 
+    left: 16px; 
+    top: 16px; 
+    width: auto; 
+    height: auto; 
+    padding: 8px 12px; 
+    z-index: 80;
+    outline: 2px solid #0b0c0f;
+    outline-offset: 2px;
+  }
+
+  /* Accessibility Floating Action Button */
+  .a11y-fab {
+    position: fixed;
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
+    z-index: 70;
+  }
+
+  .a11y-fab .btn {
+    width: var(--fab-size);
+    height: var(--fab-size);
+    padding: 0;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+  }
+
+  .a11y-fab .fab-emoji {
+    font-size: var(--fab-icon);
+    line-height: 1;
+  }
+
+  /* Hero card and photo container */
+  .hero-card {
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-photo {
+    width: clamp(180px, 22vw, 340px);
+    aspect-ratio: 1/1;
+    border-radius: 18px;
+    overflow: hidden;
+    outline: 1px solid var(--border);
+    box-shadow: var(--elev-2);
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-photo .si-img {
+    object-fit: cover;
+    object-position: 50% 42%;
+    display: block;
+  }
+
+  /* Small screens: keep space around the FAB */
+  @media (max-width: 420px) {
+    .a11y-fab {
+      right: 12px;
+      bottom: 12px;
+    }
+  }
+
+  /* Reduced motion stays respected globally */
+  @media (prefers-reduced-motion: reduce) {
+    .a11y-fab .btn {
+      transition: none !important;
+    }
   }
 
   /* Apply bg + keep existing colors */
